@@ -16,6 +16,10 @@ Ship::Ship(int id, size_t speed, size_t maxCrew)
     : Ship(id, "", speed, maxCrew, 0)
 {}
 
+void Ship::setName(const std::string& name) {
+    name_ = name;
+}
+
 int Ship::getId() const { 
     return id_; 
 }
