@@ -4,12 +4,16 @@
 
 class Ship {
 public:
+    Ship();
+    Ship(int id, const std::string& name, size_t speed, size_t maxCrew, size_t capacity);
+    Ship(int id, size_t speed, size_t maxCrew);
+
     int getId() const;
     std::string getName() const;
     size_t getSpeed() const;
     size_t getMaxCrew() const;
     size_t getCapacity() const;
-    
+
 private:
     int id_{};
     std::string name_{};
