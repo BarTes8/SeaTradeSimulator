@@ -1,5 +1,6 @@
 #pragma once
 
+#include <stddef.h>
 #include <string>
 
 class Ship {
@@ -16,8 +17,8 @@ public:
     size_t getMaxCrew() const;
     size_t getCapacity() const;
 
-    Ship& operator+=(const int crew);
-    Ship& operator-=(const int crew);
+    Ship& operator+=(const size_t crew);
+    Ship& operator-=(const size_t crew);
 
 
 private:
