@@ -16,10 +16,15 @@ public:
     size_t getMaxCrew() const;
     size_t getCapacity() const;
 
+    Ship& operator+=(const int crew);
+    Ship& operator-=(const int crew);
+
+
 private:
-    int id_{};
+    const int id_{};
     std::string name_{};
     size_t speed_{};
     size_t maxCrew_{};
     size_t capacity_{};
+    size_t crew_{};
 };

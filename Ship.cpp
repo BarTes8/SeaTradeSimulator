@@ -39,3 +39,18 @@ size_t Ship::getMaxCrew() const {
 size_t Ship::getCapacity() const {
     return capacity_;
 }
+
+Ship& Ship::operator+=(const int crew) {
+    if (crew_ + crew <= maxCrew_) {
+        crew_ += crew;
+    }
+    return *this;
+}
+
+Ship& Ship::operator-=(const int crew) {
+    if (crew_ >= crew) {
+        crew_ -= crew;
+    }
+    return *this;
+}
+
