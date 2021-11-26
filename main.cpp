@@ -1,3 +1,4 @@
+#include "Cargo.hpp"
 #include "Ship.hpp"
 
 int main() {

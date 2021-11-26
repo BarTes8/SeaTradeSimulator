@@ -15,3 +15,10 @@ Cargo& Cargo::operator-=(const size_t amount) {
     }
     return *this;
 }
+
+bool Cargo::operator ==(const Cargo& cargo) const {
+    if (this->name_ == cargo.name_ && this->amount_ == cargo.amount_) {
+        return true;
+    }
+    return false;
+}
