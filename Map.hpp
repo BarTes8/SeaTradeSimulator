@@ -1,10 +1,12 @@
 #pragma once
 
+#include "Island.hpp"
+
 #include <vector>
 
-class Island;
-
 class Map {
+public:
+    Map();
 
 private:
     Island* currentPosition_;
